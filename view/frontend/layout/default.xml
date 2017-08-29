@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <container name="head">
+            <block class="Rapicart\GoogleTagManager\Block\Gtm" name="head.top.additional" as="head.top.additional" template="Rapicart_GoogleTagManager::head.phtml" before="-"/>
+        </container>
+        <container name="body">
+            <block class="Rapicart\GoogleTagManager\Block\Gtm"  name="body.top" as="body.top" template="Rapicart_GoogleTagManager::gtm.phtml" before="-"/>
+        </container>
+    </body>
+</page>
